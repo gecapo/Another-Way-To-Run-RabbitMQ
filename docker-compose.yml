@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+#=================================  
+  rabbitmq:
+    restart: always
+    container_name: rabbitmq
+    build:
+      context: ./rabbitmq-conf
+      dockerfile: ./Dockerfile
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - svcnw
+#=================================
+networks:
+ svcnw:
+   driver: bridge
