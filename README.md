@@ -3,12 +3,10 @@
 
 #### Feature
 
-Todo
+Define q's in definitions.json
 
 #### Docker
 
-Todo
-
 ```sh
-Todo
+docker compose up
 ```
